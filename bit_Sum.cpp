@@ -18,16 +18,12 @@ int main ()
     }
 
 
-    int ans = 0 ;
-    int sum = 0 ;
+    double ans = 0 ;
+    double sum = 0 ;
 
     for(int i = 0 ; i<n ; i++)
     {
-        if(bits[i] == 0 )
-        {
-            continue;
-        }
-        else if (bits[i] == 1)
+       if (bits[i] == 1)
         {
             ans = bits[i] * pow(2,n-i-1);
             sum = ans + sum ;
